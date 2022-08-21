@@ -1,6 +1,6 @@
-import styled, { createGlobalStyles } from "styled-components";
+import styled, { createGlobalStyle } from 'styled-components';
 
-const GlobalStyles = createGlobalStyles`
+const GlobalStyles = createGlobalStyle`
 *{
   box-sizing:border-box;
   margin:0;
@@ -8,7 +8,6 @@ const GlobalStyles = createGlobalStyles`
   font-family: 'Inter', sans-serif;
 }
 `;
-export default GlobalStyles;
 
 export const Container = styled.main`
   width: 100%;
@@ -94,6 +93,7 @@ export const Paragraph = styled.p`
 export const Button = styled.button`
   display: inline-block;
   padding: .75rem 1.25rem;
+  border: none;
   border-radius: 10rem;
   color: #fff;
   text-transform: uppercase;
@@ -111,7 +111,7 @@ export const Button = styled.button`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0cf;
+    background-color: #54BAB9;
     border-radius: 10rem;
     z-index: -2;
   }
@@ -122,15 +122,17 @@ export const Button = styled.button`
     left: 0;
     width: 0%;
     height: 100%;
-    background-color: darken(#0cf, 15%);
+    background-color: darken(#54BAB9, 15%);
     transition: all .3s;
     border-radius: 10rem;
     z-index: -1;
   }
   &:hover {
     color: #fff;
-    &:before {
+  }
+  &:hover:before {
       width: 100%;
     }
-  }
 `;
+
+export default GlobalStyles;
