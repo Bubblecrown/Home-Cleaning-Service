@@ -1,4 +1,5 @@
 import { Route, Router, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
 import GlobalStyles from "./globalStyles";
 
 // pages
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <GlobalStyles />
+      <Navbar/>
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route exact path="/Signup" element={<SingupPage />} />

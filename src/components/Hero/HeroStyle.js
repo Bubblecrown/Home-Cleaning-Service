@@ -4,8 +4,9 @@ import { Button } from "../../globalStyles";
 export const HeroSection = styled.section`
   height: 100vh;
   background: cover center;
-  padding-top: clamp(70px, 25vh, 220px);
   box-shadow: inset 0 0 0 1000px rgba (0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
 `;
 export const HeroBackground = styled.img`
   object-fit: cover;
