@@ -11,7 +11,7 @@ import {
 const Hero = () => {
   return (
     <HeroSection>
-      <HeroBackground src="https://picsum.photos/seed/picsum/1920/1200" />
+      <HeroBackground src="https://picsum.photos/seed/picsum/1920/1200?blur=10" />
       <Container>
         <MainText>Lorem ipsum dolor sit amet </MainText>
         <HeroParagrahp>

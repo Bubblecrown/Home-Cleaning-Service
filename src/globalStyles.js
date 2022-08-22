@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 *{
@@ -92,47 +92,47 @@ export const Paragraph = styled.p`
 
 export const Button = styled.button`
   display: inline-block;
-  padding: .75rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   border: none;
   border-radius: 10rem;
   color: #fff;
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: .15rem;
-  transition: all .3s;
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #54BAB9;
+    background-color: #54bab9;
     border-radius: 10rem;
     z-index: -2;
   }
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 0%;
     height: 100%;
-    background-color: darken(#54BAB9, 15%);
-    transition: all .3s;
+    background-color: #9ed2c6;
+    transition: all 0.3s;
     border-radius: 10rem;
     z-index: -1;
   }
   &:hover {
     color: #fff;
+    cursor: pointer;
   }
   &:hover:before {
-      width: 100%;
-    }
+    width: 100%;
+  }
 `;
 
 export default GlobalStyles;

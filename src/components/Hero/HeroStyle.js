@@ -11,14 +11,18 @@ export const HeroBackground = styled.img`
   object-fit: cover;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba (0,0,0,0.7), rgba (0,0,0,0.1));
+  background: linear-gradient(
+    to right,
+    rgba (0, 0, 0, 0.7),
+    rgba (0, 0, 0, 0.1)
+  );
   position: absolute;
   top: 0;
   z-index: -1;
 `;
 export const HeroParagrahp = styled.p`
   margin-bottom: 35px;
-  font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+  font-size: clamp(0.3rem, 1.5vw, 1.3rem);
   text-align: center;
   letter-spacing: 2px;
   color: #fff;
@@ -31,7 +35,12 @@ export const ButtonContainer = styled.div`
   gap: 0.5rem;
 `;
 export const ButtonHero = styled(Button)`
-  color: #fff;
+  color: black;
+
+  &:after {
+    background-color: #f7ecde;
+  }
+
   &:before {
     background-color: #fff;
   }
@@ -41,5 +50,6 @@ export const ButtonHero = styled(Button)`
 
   &:hover {
     color: black;
+    cursor: pointer;
   }
 `;
