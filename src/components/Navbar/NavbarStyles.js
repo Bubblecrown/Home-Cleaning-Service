@@ -18,7 +18,7 @@ export const Nav = styled.nav`
 `;
 export const NavContainer = styled(Container)`
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   height: 80px;
 
   ${Container}
@@ -27,7 +27,6 @@ export const NavLogo = styled(Link)`
   color: #fff;
   display: flex;
   align-items: center;
-  justify-items: flex-start;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
@@ -39,11 +38,10 @@ export const NavIcon = styled.div`
   display: flex;
   z-index: 2;
   flex-direction: row;
-  gap: 1rem;
 `;
 export const NavMobileIcon = styled.div`
   display: none;
-  z-index: 50;
+  z-index: 2;
   @media screen and (max-width: 960px) {
     display: block;
     position: absolute;
