@@ -114,7 +114,7 @@ export const Button = styled.button`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #54bab9;
+    background-color: ${({ bg }) => (bg ? bg : "#54bab9")};
     border-radius: 10rem;
     z-index: -2;
   }
@@ -123,8 +123,8 @@ export const Button = styled.button`
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 0%;
-    height: 100%;
+    width: 100%;
+    height: 0%;
     background-color: #9ed2c6;
     transition: all 0.3s;
     border-radius: 10rem;
@@ -135,7 +135,7 @@ export const Button = styled.button`
     cursor: pointer;
   }
   &:hover:before {
-    width: 100%;
+    height: 100%;
   }
 `;
 

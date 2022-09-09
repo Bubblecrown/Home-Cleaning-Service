@@ -35,22 +35,21 @@ export const ButtonContainer = styled.div`
   flex-flow: wrap;
   gap: 0.5rem;
 `;
-export const ButtonHero = styled(Button)`
-  color: black;
+// export const ButtonHero = styled(Button)`
+//   color: black;
+//   &:after {
+//     background-color: inherit;
+//   }
 
-  &:after {
-    background-color: #f7ecde;
-  }
+//   &:before {
+//     background-color: #fff;
+//   }
+//   &:hover:before {
+//     height: 100%;
+//   }
 
-  &:before {
-    background-color: #fff;
-  }
-  &:hover:before {
-    width: 100%;
-  }
-
-  &:hover {
-    color: black;
-    cursor: pointer;
-  }
-`;
+//   &:hover {
+//     color: black;
+//     cursor: pointer;
+//   }
+// `;

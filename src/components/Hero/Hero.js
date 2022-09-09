@@ -21,7 +21,7 @@ const Hero = () => {
           <Link to="/Signup">
             <Button>Lorem ipsum</Button>
           </Link>
-          <ButtonHero>dolor sit</ButtonHero>
+          {/* <ButtonHero>dolor sit</ButtonHero> */}
         </ButtonContainer>
       </Container>
     </HeroSection>
