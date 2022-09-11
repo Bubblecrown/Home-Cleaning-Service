@@ -13,9 +13,9 @@ export const Container = styled.div`
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 30px;
-  @media screen and (min-width: 1300px) {
-    padding: 0 0;
+  padding: 0 50px;
+  @media screen and (max-width: 990px) {
+    padding: 0 30px;
   }
 `;
 
