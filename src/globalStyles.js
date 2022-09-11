@@ -14,6 +14,7 @@ export const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 50px;
+
   @media screen and (max-width: 990px) {
     padding: 0 30px;
   }
@@ -92,51 +93,6 @@ export const Paragraph = styled.p`
   margin: ${({ margin }) => (margin ? margin : "")};
   margin-bottom: ${({ mb }) => (mb ? mb : "")};
   margin-top: ${({ mt }) => (mt ? mt : "")};
-`;
-
-export const Button = styled.button`
-  display: inline-block;
-  padding: 0.75rem 1.25rem;
-  border: none;
-  border-radius: 10rem;
-  color: #fff;
-  font-size: 0.8rem;
-  letter-spacing: 0.15rem;
-  transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: ${({ bg }) => (bg ? bg : "#54bab9")};
-    border-radius: 10rem;
-    z-index: -2;
-  }
-  &:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    background-color: #9ed2c6;
-    transition: all 0.3s;
-    border-radius: 10rem;
-    z-index: -1;
-  }
-  &:hover {
-    color: #fff;
-    cursor: pointer;
-  }
-  &:hover:before {
-    height: 100%;
-  }
 `;
 
 export default GlobalStyles;
