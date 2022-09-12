@@ -40,3 +40,16 @@ export const Logotext = styled.p`
   color: #8f9699;
   font-size: 0.75rem;
 `;
+
+export const MobileIcon = styled.div`
+  display: none;
+  @media screen and (max-width: 960px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    translate: -100% 60%;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+`;
