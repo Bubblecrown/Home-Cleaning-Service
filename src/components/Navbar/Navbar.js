@@ -16,6 +16,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 // icon
 
+import { NavData } from "../../data/NavbarData";
+
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => {
@@ -34,9 +36,11 @@ const Navbar = () => {
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
-              <NavItem>
-                <NavLinks to="/">Home</NavLinks>
-              </NavItem>
+              {NavData.map((item, index) => (
+                <NavItem key={index}>
+                  <NavLinks to={item.to}>{item.title}</NavLinks>
+                </NavItem>
+              ))}
             </NavMenu>
           </NavbarContainer>
         </Nav>

@@ -33,6 +33,7 @@ export const NavLogo = styled(Link)`
 
 export const Logotitle = styled.h1`
   color: #3ca7dd;
+
   font-size: 1.75rem;
 `;
 
@@ -63,19 +64,20 @@ export const NavMenu = styled.ul`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
     top: 80px;
-    opacity: ${({ click }) => (click ? 1 : 0)};
-
-    transition: all 0.5 ease;
+    left: ${({ click }) => (click ? 0 : "-100%")};
+    transition: all 0.5s ease;
     background: #fff;
   }
 `;
 
 export const NavItem = styled.li`
+  font-size: 1rem;
   height: 40px;
   position: relative;
+  margin: 0 10px;
   &:after {
     content: "";
     position: absolute;
@@ -91,6 +93,11 @@ export const NavItem = styled.li`
 
   @media screen and (max-width: 960px) {
     width: 100%;
+    margin: 10px 0;
+    &:after {
+      content: "";
+      display: none;
+    }
   }
 `;
 

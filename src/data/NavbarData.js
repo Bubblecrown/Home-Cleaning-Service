@@ -1,15 +1,26 @@
 export const NavData = [
   {
     to: "/",
-    text: "About",
-    id: "about",
+    title: "Home",
   },
   {
-    to: "/signup",
-    text: "Contact",
+    to: "/about",
+    title: "About",
+  },
+  {
+    to: "/services",
+    title: "Services",
   },
   {
     to: "/pricing",
-    text: "Pricing",
+    title: "Pricing",
+  },
+  {
+    to: "/team",
+    title: "Team",
+  },
+  {
+    to: "/contact",
+    title: "Contact",
   },
 ];
