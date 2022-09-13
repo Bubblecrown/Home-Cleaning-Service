@@ -6,6 +6,9 @@ import {
   Logotitle,
   Logotext,
   MobileIcon,
+  NavMenu,
+  NavItem,
+  NavLinks,
 } from "./NavbarStyles";
 
 // icon
@@ -20,7 +23,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <IconContext.Provider value={{ color: '#3ca7dd' }}>
+      <IconContext.Provider value={{ color: "#3ca7dd" }}>
         <Nav>
           <NavbarContainer>
             <NavLogo to="/">
@@ -30,6 +33,11 @@ const Navbar = () => {
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
+            <NavMenu onClick={handleClick} click={click}>
+              <NavItem>
+                <NavLinks to="/">Home</NavLinks>
+              </NavItem>
+            </NavMenu>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>

@@ -53,3 +53,62 @@ export const MobileIcon = styled.div`
     cursor: pointer;
   }
 `;
+
+export const NavMenu = styled.ul`
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  @media screen and (max-width: 960px) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    opacity: ${({ click }) => (click ? 1 : 0)};
+
+    transition: all 0.5 ease;
+    background: #fff;
+  }
+`;
+
+export const NavItem = styled.li`
+  height: 40px;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    background-color: #8f9699;
+    width: 0;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  &:hover:after {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 960px) {
+    width: 100%;
+  }
+`;
+
+export const NavLinks = styled(Link)`
+  color: #8f9699;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+
+  @media screen and (max-width: 960px) {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    &:hover {
+      color: #55585a;
+      transition: all 0.3s ease;
+    }
+  }
+`;
