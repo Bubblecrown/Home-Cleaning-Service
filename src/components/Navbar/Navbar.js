@@ -23,6 +23,7 @@ const Navbar = () => {
   const handleClick = () => {
     setClick(!click);
   };
+
   return (
     <>
       <IconContext.Provider value={{ color: "#3ca7dd" }}>

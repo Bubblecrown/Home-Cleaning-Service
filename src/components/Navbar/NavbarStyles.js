@@ -33,7 +33,6 @@ export const NavLogo = styled(Link)`
 
 export const Logotitle = styled.h1`
   color: #3ca7dd;
-
   font-size: 1.75rem;
 `;
 
