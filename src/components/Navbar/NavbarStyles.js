@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Container } from "../../globalStyles";
+import { Container, Primary, Secondary } from "../../globalStyles";
 import { Link } from "react-router-dom";
 
 export const Nav = styled.nav`
@@ -32,12 +32,12 @@ export const NavLogo = styled(Link)`
 `;
 
 export const Logotitle = styled.h1`
-  color: #3ca7dd;
+  color: ${Primary};
   font-size: 1.75rem;
 `;
 
 export const Logotext = styled.p`
-  color: #8f9699;
+  color: ${Secondary};
   font-size: 0.75rem;
 `;
 
@@ -51,24 +51,26 @@ export const MobileIcon = styled.div`
     translate: -100% 60%;
     font-size: 1.8rem;
     cursor: pointer;
+    z-index: 100;
   }
 `;
 
 export const NavMenu = styled.ul`
   display: flex;
   align-items: center;
+  justify-content: center;
   list-style: none;
   text-align: center;
   @media screen and (max-width: 960px) {
-    display: flex;
     flex-direction: column;
     width: 100%;
     height: 100vh;
     position: absolute;
-    top: 80px;
-    left: ${({ click }) => (click ? 0 : "-100%")};
-    transition: all 0.5s ease;
-    background: #fff;
+    top: 0;
+    left: 0;
+    opacity: ${({ click }) => (click ? 1 : 0)};
+    transition: opacity 0.5s ease;
+    background: rgba(60, 167, 221, 0.6);
   }
 `;
 
@@ -80,7 +82,7 @@ export const NavItem = styled.li`
   &:after {
     content: "";
     position: absolute;
-    background-color: #8f9699;
+    background-color: ${Secondary};
     width: 0;
     height: 2px;
     left: 0;
@@ -101,12 +103,11 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: #8f9699;
+  color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
   height: 100%;
-
   @media screen and (max-width: 960px) {
     text-align: center;
     padding: 2rem;
