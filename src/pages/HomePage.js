@@ -1,10 +1,13 @@
-import React from 'react'
-import Hero from '../components/Hero/Hero'
-
+import React from "react";
+import { InfoSection } from "../components";
+import { HeroData, AboutusData } from "../data/InfoData";
 const HomePage = () => {
   return (
-    <><Hero /></>
-  )
-}
+    <>
+      <InfoSection {...HeroData}/>
+      <InfoSection {...AboutusData}/>
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;

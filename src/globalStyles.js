@@ -6,11 +6,15 @@ const GlobalStyles = createGlobalStyle`
   margin:0;
   padding:0;
   font-family: 'Inter', sans-serif;
+  
+}
+body{
+  background-color: #e7f3f9;
 }
 `;
 
-export const Primary = "#3ca7dd"
-export const Secondary = "#8f9699";
+export const Primary = "#3ca7dd";
+export const Secondary = "#696e70";
 export const Maintext = "#000";
 export const BgColor = "#e7f3f9";
 
@@ -32,7 +36,7 @@ export const Button = styled.button`
   color: ${Primary};
   outline: none;
   border: none;
-  color:#fff;
+  color: #fff;
 `;
 
 export default GlobalStyles;

@@ -103,12 +103,13 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: #fff;
+  color: ${Secondary};
   display: flex;
   align-items: center;
   text-decoration: none;
   height: 100%;
   @media screen and (max-width: 960px) {
+    color:#fff;
     text-align: center;
     padding: 2rem;
     width: 100%;
