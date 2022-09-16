@@ -61,9 +61,10 @@ export const NavMenu = styled.ul`
   justify-content: center;
   list-style: none;
   text-align: center;
-  opacity: 1;
+  @media screen and (min-width: 960px) and (max-width: 961px) {
+    transition: none !important; 
+  }
   @media screen and (max-width: 960px) {
-    display: flex;
     flex-direction: column;
     width: 100%;
     height: 100vh;
@@ -71,7 +72,7 @@ export const NavMenu = styled.ul`
     top: 0;
     left: 0;
     opacity: ${({ click }) => (click ? 1 : 0)};
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease-in-out;
     background: rgba(60, 167, 221, 0.6);
   }
 `;
@@ -110,7 +111,7 @@ export const NavLinks = styled(Link)`
   align-items: center;
   text-decoration: none;
   height: 100%;
-  @media screen and (max-width: 960px) {
+  @media (max-width: 960px) {
     color: #fff;
     text-align: center;
     padding: 2rem;
