@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Container } from "../../globalStyles";
+import { Container } from "../../globalStyles";
 import {
   HeroSection,
   Row,
@@ -8,8 +8,21 @@ import {
   HeroTitle,
   HeroText,
   HeroImg,
+  Img,
+  HeroButton,
 } from "./InfoStyle";
-const InfoSection = ({reverse, head, text, title}) => {
+
+const InfoSection = ({
+  reverse,
+  imageStart,
+  head,
+  text,
+  title,
+  btnText,
+  imgPath,
+  imgTitle,
+}) => {
+  const btnShow = btnText ? <HeroButton>{btnText}</HeroButton> : "";
   return (
     <>
       <HeroSection>
@@ -17,15 +30,16 @@ const InfoSection = ({reverse, head, text, title}) => {
           <Row reverse={reverse}>
             <Column>
               <TextWrapper>
+                <HeroTitle>{title}</HeroTitle>
                 <HeroTitle>{head}</HeroTitle>
-                <HeroText>
-                  {text}
-                </HeroText>
+                <HeroText>{text}</HeroText>
               </TextWrapper>
-              <Button>Know More</Button>
+              {btnShow}
             </Column>
             <Column>
-              <HeroImg></HeroImg>
+              <HeroImg imageStart={imageStart}>
+                <Img src={imgPath} alt={imgTitle}/>
+              </HeroImg>
             </Column>
           </Row>
         </Container>

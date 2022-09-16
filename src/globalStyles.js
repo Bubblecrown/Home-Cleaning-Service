@@ -25,18 +25,20 @@ export const Container = styled.div`
   padding: 0 0;
 
   @media screen and (max-width: 1220px) {
-    padding: 0 5%;
+    padding: 0 30px;
   }
 `;
 
 export const Button = styled.button`
   border-radius: 20px;
-  padding: 10px auto;
+  padding: ${({ pd }) => (pd ? pd : "10px 20px")};
+  margin-top: 15px;
   white-space: nowrap;
-  color: ${Primary};
+  background-color: ${Primary};
   outline: none;
   border: none;
   color: #fff;
+  cursor: pointer;
 `;
 
 export default GlobalStyles;
