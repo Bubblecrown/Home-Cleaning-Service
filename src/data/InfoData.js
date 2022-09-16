@@ -5,7 +5,8 @@ export const HeroData = {
   btnText:'Know More',
   imgPath:require('../assets/home-img.png'),
   imageStart:false,
-  imgTitle:'home-img'
+  imgTitle:'home-img',
+  circle:true
 }
 export const AboutusData = {
   reverse:true,
@@ -14,5 +15,6 @@ export const AboutusData = {
   title:'About Us',
   imgPath:require('../assets/about-img.png'),
   imageStart:true,
-  imgTitle:'about-img'
+  imgTitle:'about-img',
+  circle:false
 }

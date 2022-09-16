@@ -21,6 +21,7 @@ const InfoSection = ({
   btnText,
   imgPath,
   imgTitle,
+  circle,
 }) => {
   const btnShow = btnText ? <HeroButton>{btnText}</HeroButton> : "";
   return (
@@ -37,8 +38,8 @@ const InfoSection = ({
               {btnShow}
             </Column>
             <Column>
-              <HeroImg imageStart={imageStart}>
-                <Img src={imgPath} alt={imgTitle}/>
+              <HeroImg imageStart={imageStart} circle={circle}>
+                <Img src={imgPath} alt={imgTitle} />
               </HeroImg>
             </Column>
           </Row>

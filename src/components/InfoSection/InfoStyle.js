@@ -34,20 +34,25 @@ export const HeroImg = styled.div`
   display: flex;
   justify-content: ${({ imageStart }) =>
     imageStart ? "flex-start" : "center"};
+  position: relative;
+  ${({ circle }) =>
+    circle &&
+    `&:before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 200px;
+    background-color: ${Primary};
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    z-index: -1;}`}
 `;
 
 export const Img = styled.img`
-  &:before {
-    position: relative;
-    content: '';
-    position: absolute;
-    width: 340px;
-    height: 340px;
-    border-radius: 200px;
-    background-color: ${Primary};
-    left: 20%;
-    top: 22%;
-    z-index: -1;
+  
+  
   }
 `;
 

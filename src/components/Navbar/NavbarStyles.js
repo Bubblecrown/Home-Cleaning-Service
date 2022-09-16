@@ -43,12 +43,12 @@ export const Logotext = styled.p`
 
 export const MobileIcon = styled.div`
   display: none;
+  translate: -100% 60%;
   @media screen and (max-width: 960px) {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
-    translate: -100% 60%;
     font-size: 1.8rem;
     cursor: pointer;
     z-index: 100;
@@ -61,7 +61,9 @@ export const NavMenu = styled.ul`
   justify-content: center;
   list-style: none;
   text-align: center;
+  opacity: 1;
   @media screen and (max-width: 960px) {
+    display: flex;
     flex-direction: column;
     width: 100%;
     height: 100vh;
@@ -109,14 +111,14 @@ export const NavLinks = styled(Link)`
   text-decoration: none;
   height: 100%;
   @media screen and (max-width: 960px) {
-    color:#fff;
+    color: #fff;
     text-align: center;
     padding: 2rem;
     width: 100%;
     display: table;
+    transition: all 0.3s ease;
     &:hover {
       color: #55585a;
-      transition: all 0.3s ease;
     }
   }
 `;
