@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Button, Primary } from "../../globalStyles";
+import { Button, Primary, Secondary } from "../../globalStyles";
 
 export const HeroSection = styled.header`
   padding: 40px 0;
@@ -25,9 +25,47 @@ export const Column = styled.aside`
 
 export const TextWrapper = styled.div``;
 
-export const HeroTitle = styled.h1``;
+export const HeroTabLine = styled.div`
+  ${({ title }) =>
+    title &&
+    `position: relative;
+    margin: 0 10px;
+    width: 160px;
+    font-size:1.20rem;
+    display:flex;
+    justify-content:center;
+    color: ${Primary};
+&:before{content: '';
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: ${Primary};
+  top: 50%;
+  left: 0;
+}
+&:after{content: '';
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: ${Primary};
+  top: 50%;
+  right: 0;
+}`}
+`;
 
-export const HeroText = styled.p``;
+export const HeroTitle = styled.h1`
+  font-size: ${({ headTitle }) => (headTitle ? "3.3rem" : "2.75rem")};
+  margin: ${({ title }) => (title ? "20px 0" : "0 0")};
+`;
+
+export const HeroText = styled.p`
+  font-size: 1rem;
+  line-height: 1.3rem;
+  margin: 20px 0;
+  color: ${Secondary};
+`;
 
 export const HeroImg = styled.div`
   width: 100%;
@@ -50,15 +88,11 @@ export const HeroImg = styled.div`
     z-index: -1;}`}
 `;
 
-export const Img = styled.img`
-  
-  
-  }
-`;
+export const Img = styled.img``;
 
 export const HeroButton = styled(Button)`
-  ${Button}
-  font-size: medium;
+  ${Button};
+  font-size: 1rem;
   transition: all 0.3s ease;
   &:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

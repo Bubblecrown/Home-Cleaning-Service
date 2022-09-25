@@ -10,6 +10,7 @@ import {
   HeroImg,
   Img,
   HeroButton,
+  HeroTabLine,
 } from "./InfoStyle";
 
 const InfoSection = ({
@@ -22,6 +23,8 @@ const InfoSection = ({
   imgPath,
   imgTitle,
   circle,
+  headTitle,
+  additionText,
 }) => {
   const btnShow = btnText ? <HeroButton>{btnText}</HeroButton> : "";
   return (
@@ -31,9 +34,12 @@ const InfoSection = ({
           <Row reverse={reverse}>
             <Column>
               <TextWrapper>
-                <HeroTitle>{title}</HeroTitle>
-                <HeroTitle>{head}</HeroTitle>
+                <HeroTabLine title={title}>{title}</HeroTabLine>
+                <HeroTitle headTitle={headTitle} title={title}>
+                  {head}
+                </HeroTitle>
                 <HeroText>{text}</HeroText>
+                <HeroText>{additionText}</HeroText>
               </TextWrapper>
               {btnShow}
             </Column>
