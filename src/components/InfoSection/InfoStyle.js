@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Button, Primary, Secondary } from "../../globalStyles";
+import { Button, Primary, Secondary, BgCircleColor } from "../../globalStyles";
 
 export const HeroSection = styled.header`
   padding: 40px 0;
@@ -25,34 +25,34 @@ export const Column = styled.aside`
 
 export const TextWrapper = styled.div``;
 
+const TabLine = `
+  position: relative;
+  margin: 0 10px;
+  width: 160px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  color: ${Primary};
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: ${Primary};
+    top: 50%;
+  }
+  &:before {
+    left: 0;
+  }
+  &:after {
+    right: 0;
+  }
+`;
+
 export const HeroTabLine = styled.div`
-  ${({ title }) =>
-    title &&
-    `position: relative;
-    margin: 0 10px;
-    width: 160px;
-    font-size:1.20rem;
-    display:flex;
-    justify-content:center;
-    color: ${Primary};
-&:before{content: '';
-  position: absolute;
-  display: block;
-  width: 30px;
-  height: 3px;
-  background-color: ${Primary};
-  top: 50%;
-  left: 0;
-}
-&:after{content: '';
-  position: absolute;
-  display: block;
-  width: 30px;
-  height: 3px;
-  background-color: ${Primary};
-  top: 50%;
-  right: 0;
-}`}
+  ${({ title }) => title && `${TabLine}`}
 `;
 
 export const HeroTitle = styled.h1`
@@ -67,28 +67,48 @@ export const HeroText = styled.p`
   color: ${Secondary};
 `;
 
+const Circle = `&:before {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 200px;
+  background-color: ${Primary};
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  z-index: -1;}`;
+
+const CircleLabel = `
+  background-color: ${BgCircleColor};
+  width: fit-content;
+  border-radius:50%;
+  margin:auto;
+  box-shadow: rgba(60,167,221,0.2) 0px 0px 15px 0px;
+`;
 export const HeroImg = styled.div`
   width: 100%;
   display: flex;
+
   justify-content: ${({ imageStart }) =>
     imageStart ? "flex-start" : "center"};
   position: relative;
-  ${({ circle }) =>
-    circle &&
-    `&:before {
-    content: "";
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    border-radius: 200px;
-    background-color: ${Primary};
-    left: 50%;
-    top: 50%;
-    translate: -50% -50%;
-    z-index: -1;}`}
+  ${(props) => {
+    if (props.circle) {
+      return `${Circle}`;
+    } else if (props.circleLabel) {
+      return `${CircleLabel}`;
+    }
+  }}
 `;
 
-export const Img = styled.img``;
+export const Img = styled.img`
+  ${({ circleLabel }) =>
+    circleLabel &&
+    `max-width: 450px;
+    padding: 20px;
+    border-radius: 50%;`}
+`;
 
 export const HeroButton = styled(Button)`
   ${Button};

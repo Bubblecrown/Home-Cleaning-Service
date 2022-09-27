@@ -3,12 +3,12 @@ export const HeroData = {
   head: "Need Cleaning Services ?",
   text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, earum. Ipsam earum recusandae hic vero veritatis iusto quidem dolore.",
   btnText: "Know More",
-  title: false,
   imgPath: require("../assets/home-img.png"),
   imageStart: false,
   imgTitle: "home-img",
   circle: true,
   headTitle: true,
+  circleLabel: false,
 };
 export const AboutusData = {
   reverse: true,
@@ -22,4 +22,5 @@ export const AboutusData = {
   imgTitle: "about-img",
   circle: false,
   headTitle: false,
+  circleLabel: true,
 };

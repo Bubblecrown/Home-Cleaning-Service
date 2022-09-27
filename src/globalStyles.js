@@ -19,6 +19,7 @@ export const Primary = "#3ca7dd";
 export const Secondary = "#696e70";
 export const Maintext = "#000";
 export const BgColor = "#e7f3f9";
+export const BgCircleColor = "#eff7fb";
 
 export const Container = styled.div`
   width: 100%;
