@@ -9,6 +9,7 @@ export const HeroData = {
   circle: true,
   headTitle: true,
   circleLabel: false,
+  boxContainer:false
 };
 export const AboutusData = {
   reverse: true,
@@ -23,4 +24,7 @@ export const AboutusData = {
   circle: false,
   headTitle: false,
   circleLabel: true,
+  boxNumberText: "2.5K",
+  boxText: "satisfied clients",
+  boxContainer:true
 };

@@ -17,13 +17,12 @@ export const Column = styled.aside`
   flex: 1;
   max-width: 48%;
   flex-basis: 48%;
+  position: relative;
   @media screen and (max-width: 768px) {
     max-width: 100%;
     flex-basis: 100%;
   }
 `;
-
-export const TextWrapper = styled.div``;
 
 const TabLine = `
   position: relative;
@@ -89,7 +88,8 @@ const CircleLabel = `
 export const HeroImg = styled.div`
   width: 100%;
   display: flex;
-
+  max-width: 450px;
+  height: auto;
   justify-content: ${({ imageStart }) =>
     imageStart ? "flex-start" : "center"};
   position: relative;
@@ -112,9 +112,26 @@ export const Img = styled.img`
 
 export const HeroButton = styled(Button)`
   ${Button};
+  display: ${({ btnText }) => (btnText ? "block" : "none")};
   font-size: 1rem;
   transition: all 0.3s ease;
   &:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
 `;
+
+export const TextWrapper = styled.div`
+  display: ${({ boxContainer }) => (boxContainer ? "block" : "none")};
+  width: 120px;
+  height: 120px;
+  background: ${Primary};
+  position: absolute;
+  top: 35%;
+  left: -10%;
+  color: white;
+  text-align: center;
+
+  vertical-align: middle;
+`;
+
+export const BoxText = styled.div``;

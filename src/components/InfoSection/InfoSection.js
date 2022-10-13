@@ -4,13 +4,14 @@ import {
   HeroSection,
   Row,
   Column,
-  TextWrapper,
   HeroTitle,
   HeroText,
   HeroImg,
   Img,
   HeroButton,
   HeroTabLine,
+  BoxText,
+  TextWrapper
 } from "./InfoStyle";
 
 const InfoSection = ({
@@ -25,28 +26,42 @@ const InfoSection = ({
   circle,
   headTitle,
   additionText,
-  circleLabel
+  circleLabel,
+  boxNumberText,
+  boxText,
+  boxContainer
 }) => {
-  const btnShow = btnText ? <HeroButton>{btnText}</HeroButton> : "";
   return (
     <>
       <HeroSection>
         <Container>
           <Row reverse={reverse}>
             <Column>
-              <TextWrapper>
-                <HeroTabLine title={title}>{title}</HeroTabLine>
-                <HeroTitle headTitle={headTitle} title={title}>
-                  {head}
-                </HeroTitle>
-                <HeroText>{text}</HeroText>
-                <HeroText>{additionText}</HeroText>
-              </TextWrapper>
-              {btnShow}
+              <HeroTabLine title={title}>{title}</HeroTabLine>
+              <HeroTitle headTitle={headTitle} title={title}>
+                {head}
+              </HeroTitle>
+              <HeroText>{text}</HeroText>
+              <HeroText>{additionText}</HeroText>
+              <HeroButton btnText={btnText}>{btnText}</HeroButton>
             </Column>
             <Column>
-              <HeroImg imageStart={imageStart} circle={circle} circleLabel={circleLabel}>
-                <Img src={imgPath} alt={imgTitle} circleLabel={circleLabel}/>
+              <HeroImg
+                imageStart={imageStart}
+                circle={circle}
+                circleLabel={circleLabel}
+              >
+                <Img src={imgPath} alt={imgTitle} circleLabel={circleLabel} />
+
+                <TextWrapper boxContainer={boxContainer}>
+                  <BoxText boxNumberText={boxNumberText}>
+                    {boxNumberText}
+                  </BoxText>
+                  <BoxText boxText={boxText}>
+                    {boxText}
+                  </BoxText>
+                </TextWrapper>
+
               </HeroImg>
             </Column>
           </Row>
