@@ -11,7 +11,8 @@ import {
   HeroButton,
   HeroTabLine,
   BoxText,
-  TextWrapper
+  TextWrapper,
+  BoxHeader
 } from "./InfoStyle";
 
 const InfoSection = ({
@@ -29,7 +30,7 @@ const InfoSection = ({
   circleLabel,
   boxNumberText,
   boxText,
-  boxContainer
+  boxContainer,
 }) => {
   return (
     <>
@@ -54,14 +55,11 @@ const InfoSection = ({
                 <Img src={imgPath} alt={imgTitle} circleLabel={circleLabel} />
 
                 <TextWrapper boxContainer={boxContainer}>
-                  <BoxText boxNumberText={boxNumberText}>
+                  <BoxHeader boxNumberText={boxNumberText}>
                     {boxNumberText}
-                  </BoxText>
-                  <BoxText boxText={boxText}>
-                    {boxText}
-                  </BoxText>
+                  </BoxHeader>
+                  <BoxText boxText={boxText}>{boxText}</BoxText>
                 </TextWrapper>
-
               </HeroImg>
             </Column>
           </Row>

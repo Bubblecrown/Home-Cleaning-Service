@@ -85,10 +85,9 @@ const CircleLabel = `
   margin:auto;
   box-shadow: rgba(60,167,221,0.2) 0px 0px 15px 0px;
 `;
-export const HeroImg = styled.div`
+export const HeroImg = styled.picture`
   width: 100%;
   display: flex;
-  max-width: 450px;
   height: auto;
   justify-content: ${({ imageStart }) =>
     imageStart ? "flex-start" : "center"};
@@ -120,18 +119,28 @@ export const HeroButton = styled(Button)`
   }
 `;
 
-export const TextWrapper = styled.div`
-  display: ${({ boxContainer }) => (boxContainer ? "block" : "none")};
-  width: 120px;
-  height: 120px;
+export const TextWrapper = styled.article`
+  display: ${({ boxContainer }) => (boxContainer ? "flex" : "none")};
+  width: 140px;
+  height: 140px;
   background: ${Primary};
   position: absolute;
   top: 35%;
-  left: -10%;
+  left: -15%;
   color: white;
   text-align: center;
-
-  vertical-align: middle;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0 30% 0 30%;
+`;
+export const BoxHeader = styled.h1`
+  font-size: 2.25rem;
+  line-height: 3rem;
 `;
 
-export const BoxText = styled.div``;
+export const BoxText = styled.p`
+  font-size: 0.85rem;
+  word-spacing: 1rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+`;
