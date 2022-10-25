@@ -12,7 +12,7 @@ import {
   HeroTabLine,
   BoxText,
   TextWrapper,
-  BoxHeader
+  BoxHeader,
 } from "./InfoStyle";
 
 const InfoSection = ({

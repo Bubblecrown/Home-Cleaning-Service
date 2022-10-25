@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Container, Primary, Secondary } from "../../globalStyles";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 export const Nav = styled.nav`
   background-color: transparent;

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import {
   Nav,
   NavbarContainer,
@@ -30,22 +31,32 @@ const Navbar = () => {
     }
   };
 
+  const closeMenu = () => setClick(false);
+
   return (
     <>
       <IconContext.Provider value={{ color: click ? "#fff" : "#3ca7dd" }}>
         <Nav>
           <NavbarContainer>
-            <NavLogo to="/">
+            <NavLogo to="/home">
               <Logotitle>tolmol</Logotitle>
               <Logotext>cleaning service</Logotext>
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </MobileIcon>
-            <NavMenu onClick={handleClick} click={click}>
+            <NavMenu click={click}>
               {NavData.map((item, index) => (
                 <NavItem key={index}>
-                  <NavLinks to={item.to}>{item.title}</NavLinks>
+                  <NavLinks
+                    to={item.to}
+                    onClick={closeMenu}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                  >
+                    {item.title}
+                  </NavLinks>
                 </NavItem>
               ))}
             </NavMenu>

@@ -1,10 +1,10 @@
 export const NavData = [
   {
-    to: "/",
+    to: "home",
     title: "Home",
   },
   {
-    to: "/about",
+    to: "about",
     title: "About",
   },
   {
