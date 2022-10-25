@@ -1,6 +1,5 @@
 import { Navbar } from "./components";
 import GlobalStyles from "./globalStyles";
-import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
 // pages
 // import HomePage from "./pages/HomePage";
@@ -12,7 +11,6 @@ function App() {
       <GlobalStyles />
       <Navbar />
       <HomePage />
-      <AboutPage/>
     </>
   );
 }
