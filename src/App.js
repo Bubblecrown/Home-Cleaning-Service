@@ -1,7 +1,8 @@
-
+import { Route, Router, Routes } from "react-router-dom";
 import { Navbar } from "./components";
 import GlobalStyles from "./globalStyles";
-import HomePage from './pages/HomePage'
+import AboutPage from "./pages/AboutPage";
+import HomePage from "./pages/HomePage";
 // pages
 // import HomePage from "./pages/HomePage";
 // ens pages
@@ -11,7 +12,10 @@ function App() {
     <>
       <GlobalStyles />
       <Navbar />
-      <HomePage />
+      <Routes>
+        <Route path="/" exact element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
     </>
   );
 }

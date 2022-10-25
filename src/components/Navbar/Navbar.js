@@ -21,8 +21,15 @@ import { NavData } from "../../data/NavbarData";
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => {
-    setClick(!click);
+    if (click === true) {
+      setClick(false);
+      document.body.style.overflow = "auto";
+    } else {
+      setClick(true);
+      document.body.style.overflow = "hidden";
+    }
   };
+
   return (
     <>
       <IconContext.Provider value={{ color: click ? "#fff" : "#3ca7dd" }}>
