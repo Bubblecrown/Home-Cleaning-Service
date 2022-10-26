@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Button, Primary, Secondary, BgCircleColor } from "../../globalStyles";
 
 export const HeroSection = styled.header`
-  padding: 40px 0;
+  padding: 50px 0;
 `;
 
 export const Row = styled.div`
@@ -52,11 +52,13 @@ const TabLine = `
 
 export const HeroTabLine = styled.div`
   ${({ title }) => title && `${TabLine}`}
+  text-transform:capitalize
 `;
 
 export const HeroTitle = styled.h1`
   font-size: ${({ headTitle }) => (headTitle ? "3.3rem" : "2.75rem")};
   margin: ${({ title }) => (title ? "20px 0" : "0 0")};
+  text-transform: capitalize;
 `;
 
 export const HeroText = styled.p`
@@ -78,7 +80,7 @@ const Circle = `&:before {
   translate: -50% -50%;
   z-index: -1;}`;
 
-const CircleLabel = `
+export const CircleLabel = `
   background-color: ${BgCircleColor};
   width: fit-content;
   border-radius:50%;

@@ -34,8 +34,7 @@ const InfoSection = ({
   path
 }) => {
   return (
-    <div id={path}>
-      <HeroSection>
+      <HeroSection id={path}>
         <Container>
           <Row reverse={reverse}>
             <Column>
@@ -66,7 +65,7 @@ const InfoSection = ({
           </Row>
         </Container>
       </HeroSection>
-    </div>
+
   );
 };
 

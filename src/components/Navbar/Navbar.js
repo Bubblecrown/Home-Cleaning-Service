@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// style
 import {
   Nav,
   NavbarContainer,
@@ -11,13 +12,16 @@ import {
   NavItem,
   NavLinks,
 } from "./NavbarStyles";
+// style
 
 // icon
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 // icon
 
+// Data
 import { NavData } from "../../data/NavbarData";
+// Data
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
