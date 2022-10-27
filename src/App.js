@@ -1,4 +1,4 @@
-import { Navbar } from "./components";
+import { Navbar } from "./layouts";
 import GlobalStyles from "./globalStyles";
 import HomePage from "./pages/HomePage";
 // pages

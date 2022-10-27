@@ -1,5 +1,5 @@
 import React from "react";
-import { InfoSection, ServeSection } from "../components";
+import { InfoSection, ServeSection } from "../layouts";
 import { HeroData } from "../data/InfoData";
 import { AboutusData } from "../data/InfoData";
 import { ServiceData } from "../data/ServiceData";

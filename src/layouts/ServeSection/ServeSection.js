@@ -1,25 +1,22 @@
 import React from "react";
+import TitleSection from "../../components/TitleSection";
 import { ServiceItem } from "../../data/ServiceData";
 import { Container } from "../../globalStyles";
+
 import {
   ServiceSection,
-  ServiceTabline,
-  ServiceHead,
   ServiceRow,
   Column,
   ServiceImg,
   ImgTitle,
-  TextWrapper
 } from "./ServeStyle";
 
-const ServeSection = ({ title, serviceTitle, headTitle }) => {
+const ServeSection = ({ title, sectionTitle, headTitle, center }) => {
   return (
     <>
       <ServiceSection>
         <Container>
-          <TextWrapper>
-          <ServiceTabline title={title}>{title}</ServiceTabline>
-          <ServiceHead headTitle={headTitle} title={title}>{serviceTitle}</ServiceHead></TextWrapper>
+          <TitleSection title={title} headTitle={headTitle} sectionTitle={sectionTitle} center={center}/>
           <ServiceRow>
             {ServiceItem.map((item, index) => (
               <Column key={index}>

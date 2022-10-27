@@ -1,7 +1,8 @@
 export const ServiceData = {
   title:"services",
-  serviceTitle:"what we do",
-  headTitle:false
+  sectionTitle:"what we do",
+  headTitle:false,
+  center:true
 };
 
 export const ServiceItem = [

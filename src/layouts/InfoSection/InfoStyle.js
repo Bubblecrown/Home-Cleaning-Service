@@ -24,47 +24,10 @@ export const Column = styled.aside`
   }
 `;
 
-const TabLine = `
-  position: relative;
-  margin: 0 10px;
-  width: 160px;
-  font-size: 1.2rem;
-  display: flex;
-  justify-content: center;
-  color: ${Primary};
-  &:before,
-  &:after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: ${Primary};
-    top: 50%;
-  }
-  &:before {
-    left: 0;
-  }
-  &:after {
-    right: 0;
-  }
-`;
-
-export const HeroTabLine = styled.div`
-  ${({ title }) => title && `${TabLine}`}
-  text-transform:capitalize
-`;
-
-export const HeroTitle = styled.h1`
-  font-size: ${({ headTitle }) => (headTitle ? "3.3rem" : "2.75rem")};
-  margin: ${({ title }) => (title ? "20px 0" : "0 0")};
-  text-transform: capitalize;
-`;
-
 export const HeroText = styled.p`
   font-size: 1rem;
   line-height: 1.3rem;
-  margin: 20px 0;
+  margin: 30px 0;
   color: ${Secondary};
 `;
 
