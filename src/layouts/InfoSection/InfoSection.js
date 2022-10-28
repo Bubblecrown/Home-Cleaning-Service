@@ -1,5 +1,5 @@
 import React from "react";
-import TitleSection from "../../components/TitleSection";
+import TitleSection from "../../components/TitleComponent/TitleSection";
 import { Container } from "../../globalStyles";
 import {
   HeroSection,

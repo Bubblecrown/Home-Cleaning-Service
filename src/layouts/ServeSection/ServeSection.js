@@ -1,5 +1,5 @@
 import React from "react";
-import TitleSection from "../../components/TitleSection";
+import {TitleSection} from "../../components";
 import { ServiceItem } from "../../data/ServiceData";
 import { Container } from "../../globalStyles";
 

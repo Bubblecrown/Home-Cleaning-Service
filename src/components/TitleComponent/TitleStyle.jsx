@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Primary } from "../globalStyles";
+import { Primary } from "../../globalStyles";
 
 export const TextWrapper = styled.section`
   display: flex;
