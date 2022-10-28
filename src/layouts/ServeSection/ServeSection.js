@@ -1,11 +1,9 @@
 import React from "react";
 import {TitleSection} from "../../components";
 import { ServiceItem } from "../../data/ServiceData";
-import { Container } from "../../globalStyles";
+import { Container, Row,Section } from "../../globalStyles";
 
 import {
-  ServiceSection,
-  ServiceRow,
   Column,
   ServiceImg,
   ImgTitle,
@@ -14,19 +12,19 @@ import {
 const ServeSection = ({ title, sectionTitle, headTitle, center }) => {
   return (
     <>
-      <ServiceSection>
+      <Section>
         <Container>
           <TitleSection title={title} headTitle={headTitle} sectionTitle={sectionTitle} center={center}/>
-          <ServiceRow>
+          <Row>
             {ServiceItem.map((item, index) => (
               <Column key={index}>
                 <ServiceImg src={item.image} alt={item.imageAlt} />
                 <ImgTitle>{item.imageTitle}</ImgTitle>
               </Column>
             ))}
-          </ServiceRow>
+          </Row>
         </Container>
-      </ServiceSection>
+      </Section>
     </>
   );
 };

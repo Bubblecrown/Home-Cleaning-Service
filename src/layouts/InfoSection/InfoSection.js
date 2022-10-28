@@ -1,9 +1,7 @@
 import React from "react";
 import TitleSection from "../../components/TitleComponent/TitleSection";
-import { Container } from "../../globalStyles";
+import { Container, Row,Section } from "../../globalStyles";
 import {
-  HeroSection,
-  Row,
   Column,
   HeroText,
   HeroImg,
@@ -34,7 +32,7 @@ const InfoSection = ({
   center,
 }) => {
   return (
-    <HeroSection id={path}>
+    <Section id={path}>
       <Container>
         <Row reverse={reverse}>
           <Column>
@@ -67,7 +65,7 @@ const InfoSection = ({
           </Column>
         </Row>
       </Container>
-    </HeroSection>
+    </Section>
   );
 };
 

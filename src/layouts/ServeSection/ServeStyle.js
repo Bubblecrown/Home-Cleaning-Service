@@ -1,16 +1,7 @@
 import styled from "styled-components";
 import {
   CircleLabel,
-  Row,
 } from "../InfoSection/InfoStyle";
-
-export const ServiceSection = styled.div`
-  padding: 50px 0;
-`;
-
-export const ServiceRow = styled(Row)`
-  flex-direction: row;
-`;
 
 export const Column = styled.section`
   display: flex;

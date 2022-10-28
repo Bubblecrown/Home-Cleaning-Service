@@ -10,7 +10,6 @@ const GlobalStyles = createGlobalStyle`
 }
 body{
   background-color: #e7f3f9;
-  
 }
 
 `;
@@ -20,6 +19,10 @@ export const Secondary = "#696e70";
 export const Maintext = "#000";
 export const BgColor = "#e7f3f9";
 export const BgCircleColor = "#eff7fb";
+
+export const Section = styled.div`
+  padding: 80px 0;
+`;
 
 export const Container = styled.div`
   width: 100%;
@@ -41,6 +44,14 @@ export const Button = styled.button`
   border: none;
   color: #fff;
   cursor: pointer;
+`;
+
+export const Row = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
+  align-items: center;
+  justify-content: space-between;
 `;
 
 export default GlobalStyles;

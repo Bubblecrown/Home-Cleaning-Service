@@ -1,18 +1,6 @@
 import styled from "styled-components";
 import { Button, Primary, Secondary, BgCircleColor } from "../../globalStyles";
 
-export const HeroSection = styled.header`
-  padding: 50px 0;
-`;
-
-export const Row = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
-  align-items: center;
-  justify-content: space-between;
-`;
-
 export const Column = styled.aside`
   flex: 1;
   max-width: 48%;

@@ -10,7 +10,7 @@ const HomePage = () => {
       <InfoSection {...HeroData} path="home" />
       <InfoSection {...AboutusData} path="about" />
       <ServeSection {...ServiceData} />
-      <PricingSection />
+      <PricingSection/>
     </>
   );
 };
