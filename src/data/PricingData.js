@@ -1,11 +1,11 @@
 export const PriceData = {
   title: "pricing",
   sectionTitle: "our pricing plans",
-  headTitle:false,
+  headTitle: false,
   center: true,
 };
-export const TierData = {
-  basic:{
+export const TierData = [
+  {
     tier: "basic",
     price: "$299",
     window: true,
@@ -14,7 +14,7 @@ export const TierData = {
     car: false,
     bathroom: false,
   },
-  standard:{
+  {
     tier: "standard",
     price: "$499",
     window: true,
@@ -23,7 +23,7 @@ export const TierData = {
     car: true,
     bathroom: false,
   },
-  premium:{
+  {
     tier: "premium",
     price: "$899",
     window: true,
@@ -32,7 +32,7 @@ export const TierData = {
     car: true,
     bathroom: true,
   },
-};
+];
 
 export const PriceService = [
   "window cleaning",
