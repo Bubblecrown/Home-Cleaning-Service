@@ -1,5 +1,11 @@
 import styled from "styled-components";
-import { Button, Primary, Secondary, BgCircleColor } from "../../globalStyles";
+import {
+  Button,
+  Primary,
+  Secondary,
+  BgCircleColor,
+  Boxshadow,
+} from "../../globalStyles";
 
 export const Column = styled.aside`
   flex: 1;
@@ -36,7 +42,7 @@ export const CircleLabel = `
   width: fit-content;
   border-radius:50%;
   margin:auto;
-  box-shadow: rgba(60,167,221,0.2) 0px 0px 15px 0px;
+  box-shadow: ${Boxshadow};
 `;
 export const HeroImg = styled.picture`
   width: 100%;

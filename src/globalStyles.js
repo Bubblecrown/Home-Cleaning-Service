@@ -19,7 +19,7 @@ export const Secondary = "#696e70";
 export const Maintext = "#000";
 export const BgColor = "#e7f3f9";
 export const BgCircleColor = "#eff7fb";
-
+export const Boxshadow = "rgba(60,167,221,0.2) 0px 0px 15px 0px;";
 export const Section = styled.div`
   padding: 80px 0;
 `;
