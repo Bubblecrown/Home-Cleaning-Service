@@ -39,13 +39,7 @@ const PricingSection = () => {
                         item.carpet ||
                         item.furniture ||
                         item.car ||
-                        item.bathroom) && <GoCheck/>}
-                      
-                      {/* {item.window ||
-                        item.carpet ||
-                        item.furniture ||
-                        item.car ||
-                        item.bathroom ? } */}
+                        item.bathroom) && <GoCheck />}
                     </ListIcon>
                     <ServiceList key={index}>{service}</ServiceList>
                   </>
@@ -53,7 +47,12 @@ const PricingSection = () => {
               </PlanList>
             </CardPlan>
           ))}
-
+          <ListIcon>
+            <GoCheck />
+          </ListIcon>
+          <ServiceList>
+          window cleaning
+          </ServiceList>
           {/* <Card {...TierData}/> */}
         </Row>
       </Container>
