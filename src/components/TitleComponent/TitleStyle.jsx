@@ -41,7 +41,7 @@ export const TabLine = styled.div`
 `;
 
 export const TablineTitle = styled.h1`
-  font-size: ${({ headTitle }) => (headTitle ? "3.3rem" : "2.75rem")};
-  margin: ${({ title }) => (title ? "20px 0" : "0 0")};
+  font-size: ${({ headTitle }) => (headTitle ? "3.3rem" : "2.5rem")};
+  margin: ${({ title }) => (title ? "20px 0 0 0" : "0 0")};
   text-transform: capitalize;
 `;
