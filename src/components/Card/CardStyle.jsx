@@ -17,3 +17,22 @@ export const CardPlan = styled.div`
 export const CardTier = styled.h1`
   font-size: 1.5rem;
 `;
+
+export const PriceCircle = styled.div`
+  font-size: 1.5rem;
+`;
+export const Price = styled.h2`
+  font-size: 1.5rem;
+`;
+export const PriceTitle = styled.p`
+  font-size: 1.5rem;
+`;
+export const PlanList = styled.div`
+  font-size: 1.5rem;
+`;
+export const ListIcon = styled.div`
+  font-size: 1.5rem;
+`;
+export const ServiceList = styled.h3`
+  font-size: 1.5rem;
+`;

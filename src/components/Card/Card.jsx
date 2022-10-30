@@ -1,15 +1,34 @@
-// import React from "react";
-// import { CardPlan, CardTier } from "./CardStyle";
-// // GoChec
-// // import { IconName } from "react-icons/go";k
-// // GrFormClose
-// // import { IconName } from "react-icons/gr";
-// const Card = ({basic,standard,premium}) => {
-//   return (
-//     <CardPlan>
-//       <CardTier>{basic.tier}</CardTier>
-//     </CardPlan>
-//   );
-// };
+import React from "react";
+import {
+  CardPlan,
+  CardTier,
+  PriceCircle,
+  Price,
+  PriceTitle,
+  PlanList,
+  ListIcon,
+  ServiceList,
+} from "./CardStyle";
 
-// export default Card;
+import { GoCheck } from "react-icons/go";
+import { GrFormClose } from "react-icons/gr";
+
+const Card = ({ tier, price, serviceList }) => {
+  return (
+    <CardPlan>
+      <CardTier>{tier}</CardTier>
+      <PriceCircle>
+        <Price>{price}</Price>
+        <PriceTitle>monthly</PriceTitle>
+      </PriceCircle>
+      {serviceList.map((list, index) => (
+        <PlanList key={index}>
+          <ListIcon>{list.service ? <GoCheck /> : <GrFormClose />}</ListIcon>
+          <ServiceList>{list.textList}</ServiceList>
+        </PlanList>
+      ))}
+    </CardPlan>
+  );
+};
+
+export default Card;
