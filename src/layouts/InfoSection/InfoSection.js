@@ -1,8 +1,7 @@
 import React from "react";
 import TitleSection from "../../components/TitleComponent/TitleSection";
-import { Container, Row,Section } from "../../globalStyles";
+import { Container, Row,Section,Column } from "../../globalStyles";
 import {
-  Column,
   HeroText,
   HeroImg,
   Img,

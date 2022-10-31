@@ -1,16 +1,13 @@
 import styled from "styled-components";
-import {
-  CircleLabel,
-} from "../InfoSection/InfoStyle";
+import { CircleLabel } from "../InfoSection/InfoStyle";
 
-export const Column = styled.section`
+export const ServiceColumn = styled.aside`
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
+  justify-content: center;
   max-width: 20%;
   flex-basis: 20%;
-  position: relative;
   @media screen and (max-width: 768px) {
     max-width: 45%;
     flex-basis: 45%;
@@ -30,5 +27,3 @@ export const ImgTitle = styled.h2`
   font-weight: 600;
   line-height: 0.5rem;
 `;
-
-

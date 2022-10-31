@@ -7,16 +7,6 @@ import {
   Boxshadow,
 } from "../../globalStyles";
 
-export const Column = styled.aside`
-  flex: 1;
-  max-width: 48%;
-  flex-basis: 48%;
-  position: relative;
-  @media screen and (max-width: 768px) {
-    max-width: 100%;
-    flex-basis: 100%;
-  }
-`;
 
 export const HeroText = styled.p`
   font-size: 1rem;
@@ -44,6 +34,7 @@ export const CircleLabel = `
   margin:auto;
   box-shadow: ${Boxshadow};
 `;
+
 export const HeroImg = styled.picture`
   width: 100%;
   display: flex;

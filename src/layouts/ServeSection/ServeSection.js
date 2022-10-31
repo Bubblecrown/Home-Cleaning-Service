@@ -4,7 +4,7 @@ import { ServiceItem } from "../../data/ServiceData";
 import { Container, Row,Section } from "../../globalStyles";
 
 import {
-  Column,
+  ServiceColumn,
   ServiceImg,
   ImgTitle,
 } from "./ServeStyle";
@@ -17,10 +17,10 @@ const ServeSection = ({ title, sectionTitle, headTitle, center }) => {
           <TitleSection title={title} headTitle={headTitle} sectionTitle={sectionTitle} center={center}/>
           <Row>
             {ServiceItem.map((item, index) => (
-              <Column key={index}>
+              <ServiceColumn key={index}>
                 <ServiceImg src={item.image} alt={item.imageAlt} />
                 <ImgTitle>{item.imageTitle}</ImgTitle>
-              </Column>
+              </ServiceColumn>
             ))}
           </Row>
         </Container>
