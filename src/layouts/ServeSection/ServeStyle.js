@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { CircleLabel } from "../../globalStyles";
 
-export const ServiceColumn = styled.aside`
+export const ServiceColumn = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;

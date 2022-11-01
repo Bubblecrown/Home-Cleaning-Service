@@ -56,7 +56,7 @@ export const Row = styled.div`
 
 export const Column = styled.aside`
   flex: 1;
-  max-width: 48%;
+  max-width: ${({column})=>(column? column : "48%")} ;
   flex-basis: 48%;
   position: relative;
   @media screen and (max-width: 768px) {

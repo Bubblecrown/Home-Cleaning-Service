@@ -3,12 +3,13 @@ import {
   BgCircleColor,
   Boxshadow,
   Button,
+  Column,
   Primary,
   Secondary,
 } from "../../globalStyles";
 
 export const CardPlan = styled.section`
-  flex: 1;
+  ${Column}
   max-width: 32%;
   flex-basis: 32%;
   height: auto;
@@ -17,10 +18,6 @@ export const CardPlan = styled.section`
   border-radius: 10px;
   box-shadow: ${Boxshadow};
   text-transform: capitalize;
-  @media screen and (max-width: 768px) {
-    max-width: 100%;
-    flex-basis: 100%;
-  }
 `;
 
 export const CardTier = styled.h1`
