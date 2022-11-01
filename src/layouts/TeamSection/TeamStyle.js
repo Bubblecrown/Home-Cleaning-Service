@@ -1,6 +1,5 @@
 import styled from "styled-components";
-
-import { CircleLabel } from "../InfoSection/InfoStyle";
+import { CircleLabel } from "../../globalStyles";
 
 export const TeamColumn = styled.div`
   width: 31%;

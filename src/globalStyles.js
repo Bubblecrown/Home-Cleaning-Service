@@ -65,4 +65,12 @@ export const Column = styled.aside`
   }
 `;
 
+export const CircleLabel = `
+  background-color: ${BgCircleColor};
+  width: fit-content;
+  border-radius:50%;
+  margin:auto;
+  box-shadow: ${Boxshadow};
+`;
+
 export default GlobalStyles;

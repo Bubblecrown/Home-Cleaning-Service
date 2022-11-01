@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { CircleLabel } from "../InfoSection/InfoStyle";
+import { CircleLabel } from "../../globalStyles";
 
 export const ServiceColumn = styled.aside`
   display: flex;

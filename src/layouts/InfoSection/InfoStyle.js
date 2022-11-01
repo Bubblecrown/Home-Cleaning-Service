@@ -3,8 +3,7 @@ import {
   Button,
   Primary,
   Secondary,
-  BgCircleColor,
-  Boxshadow,
+  CircleLabel,
 } from "../../globalStyles";
 
 
@@ -26,14 +25,6 @@ const Circle = `&:before {
   top: 50%;
   translate: -50% -50%;
   z-index: -1;}`;
-
-export const CircleLabel = `
-  background-color: ${BgCircleColor};
-  width: fit-content;
-  border-radius:50%;
-  margin:auto;
-  box-shadow: ${Boxshadow};
-`;
 
 export const HeroImg = styled.picture`
   width: 100%;

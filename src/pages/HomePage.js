@@ -3,6 +3,7 @@ import { InfoSection, PricingSection, ServeSection, TeamSection } from "../layou
 import { HeroData } from "../data/InfoData";
 import { AboutusData } from "../data/InfoData";
 import { ServiceData } from "../data/ServiceData";
+import ContactSection from "../layouts/ContactSection/ContactSection";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <ServeSection {...ServiceData} />
       <PricingSection/>
       <TeamSection/>
+      <ContactSection/>
     </>
   );
 };
