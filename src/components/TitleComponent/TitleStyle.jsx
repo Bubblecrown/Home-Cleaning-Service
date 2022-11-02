@@ -11,8 +11,7 @@ export const TextWrapper = styled.section`
 
 const Line = `
   position: relative;
-  margin: 0 10px;
-  width: 160px;
+  width: 170px;
   font-size: 1.2rem;
   display: flex;
   justify-content: center;
@@ -22,7 +21,7 @@ const Line = `
     content: "";
     position: absolute;
     display: block;
-    width: 30px;
+    width: 15%;
     height: 3px;
     background-color: ${Primary};
     top: 50%;
@@ -36,7 +35,7 @@ const Line = `
 `;
 
 export const TabLine = styled.div`
-  ${({ title }) => title && `${Line}`}
+  ${({ title}) => title && `${Line}`}
   text-transform:capitalize
 `;
 

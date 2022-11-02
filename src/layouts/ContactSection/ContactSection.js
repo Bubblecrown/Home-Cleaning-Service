@@ -3,25 +3,34 @@ import { TitleSection } from "../../components";
 import { AddressData, ContactData } from "../../data/ContactData";
 import { Column, Container, Row, Section } from "../../globalStyles";
 
-import { AddressTitle, AddressDetail, ContactColumn } from "./ContactStyle";
+import {
+  AddressTitle,
+  AddressDetail,
+  ContactColumn,
+  ContactIcon,
+  FormColumn,
+  ContactRow
+} from "./ContactStyle";
 const ContactSection = () => {
   return (
     <Section>
       <Container>
         <TitleSection {...ContactData} />
         <Row>
-          <ContactColumn column={"42%"}>
+          <ContactColumn>
             {AddressData.map((item, index) => (
-              <Row key={index}>
-                <item.icon />
-                <Column>
+              <ContactRow key={index}>
+                <ContactIcon>
+                  <item.icon />
+                </ContactIcon>
+                <Column column={"80%"}>
                   <AddressTitle>{item.title}</AddressTitle>
                   <AddressDetail>{item.detail}</AddressDetail>
                 </Column>
-              </Row>
+              </ContactRow>
             ))}
           </ContactColumn>
-          <ContactColumn column={"55%"}></ContactColumn>
+          <FormColumn></FormColumn>
         </Row>
       </Container>
     </Section>
