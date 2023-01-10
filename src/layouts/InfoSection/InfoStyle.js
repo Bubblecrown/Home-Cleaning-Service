@@ -3,9 +3,9 @@ import {
   Button,
   Primary,
   Secondary,
-  CircleLabel,
+  BgCircleColor,
+  Boxshadow,
 } from "../../globalStyles";
-
 
 export const HeroText = styled.p`
   font-size: 1rem;
@@ -26,10 +26,22 @@ const Circle = `&:before {
   translate: -50% -50%;
   z-index: -1;}`;
 
+const CircleInfoLabel = `
+  background-color: ${BgCircleColor};
+  border-radius:50%;
+  margin:auto;
+  box-shadow: ${Boxshadow};
+  max-width: 450px;
+  max-height: 450px;
+  min-width: 100px;
+  min-height: 100px;
+  padding: 0 10px;
+  width:100%;
+  height:auto;
+  `;
+
 export const HeroImg = styled.picture`
-  width: 100%;
   display: flex;
-  height: auto;
   justify-content: ${({ imageStart }) =>
     imageStart ? "flex-start" : "center"};
   position: relative;
@@ -37,7 +49,7 @@ export const HeroImg = styled.picture`
     if (props.circle) {
       return `${Circle}`;
     } else if (props.circleLabel) {
-      return `${CircleLabel}`;
+      return `${CircleInfoLabel}`;
     }
   }}
 `;
@@ -45,9 +57,14 @@ export const HeroImg = styled.picture`
 export const Img = styled.img`
   ${({ circleLabel }) =>
     circleLabel &&
-    `max-width: 450px;
+    `
     padding: 20px;
-    border-radius: 50%;`}
+    border-radius: 50%;
+    max-width: 450px;
+    max-height: 450px;
+    min-width: 100px;
+    min-height: 100px;
+    `}
 `;
 
 export const HeroButton = styled(Button)`

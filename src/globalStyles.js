@@ -20,7 +20,7 @@ export const Maintext = "#000";
 export const BgColor = "#e7f3f9";
 export const BgCircleColor = "#eff7fb";
 export const Boxshadow = "rgba(60,167,221,0.2) 0px 0px 15px 0px;";
-export const LineColor ="#c0dbe9";
+export const LineColor = "#c0dbe9";
 export const Section = styled.div`
   padding: 80px 0;
 `;
@@ -57,8 +57,8 @@ export const Row = styled.div`
 
 export const Column = styled.aside`
   flex: 1;
-  max-width: ${({column})=>(column? column : "48%")} ;
-  flex-basis: ${({column})=>(column? column : "48%")};
+  flex-basis: ${({ column }) => (column ? column : "48%")};
+  padding: 0 10px;
   position: relative;
   @media screen and (max-width: 768px) {
     max-width: 100%;
@@ -68,10 +68,10 @@ export const Column = styled.aside`
 
 export const CircleLabel = `
   background-color: ${BgCircleColor};
-  width: fit-content;
   border-radius:50%;
   margin:auto;
   box-shadow: ${Boxshadow};
+  
 `;
 
 export default GlobalStyles;

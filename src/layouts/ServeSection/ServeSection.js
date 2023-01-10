@@ -1,6 +1,6 @@
 import React from "react";
 import {TitleSection} from "../../components";
-import { ServiceItem } from "../../data/ServiceData";
+import { ServiceData, ServiceItem } from "../../data/ServiceData";
 import { Container, Row,Section } from "../../globalStyles";
 
 import {
@@ -9,7 +9,8 @@ import {
   ImgTitle,
 } from "./ServeStyle";
 
-const ServeSection = ({ title, sectionTitle, headTitle, center }) => {
+const ServeSection = () => {
+  const { title, sectionTitle, headTitle, center } = ServiceData;
   return (
     <>
       <Section>

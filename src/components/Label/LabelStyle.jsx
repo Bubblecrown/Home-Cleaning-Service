@@ -6,7 +6,7 @@ export const TextWrapper = styled.article`
   width: ${({ longLabel }) => (longLabel ? "75%" : "140px")};
   height: ${({ longLabel }) => (longLabel ? "90px" : "140px")};
   background: ${Primary};
-  position: ${({ longLabel }) => (longLabel ? "absolute" : "absolute")};
+  position: absolute;
   top: ${({ longLabel }) => (longLabel ? "90%" : "35%")};
   left: ${({ longLabel }) => (longLabel ? "none" : "-15%")};
   color: white;
@@ -14,8 +14,12 @@ export const TextWrapper = styled.article`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: ${({ longLabel }) =>
-    longLabel ? "0 40px 0 40px" : "0 30% 0 30%"};
+  border-radius: ${({ longLabel }) => (longLabel ? "0 40px" : "0 30%")};
+  @media screen and (max-width: 768px) {
+    top: ${({ longLabel }) => (longLabel ? "90%" : "80%")};
+    left: ${({ longLabel }) => (longLabel ? "none" : "30%")};
+    border-radius: ${({ longLabel }) => (longLabel ? "0 40px" : "0 40px")};
+  }
 `;
 export const BoxHeader = styled.h1`
   font-size: ${({ longLabel }) => (longLabel ? "1.40rem" : "2.25rem")};

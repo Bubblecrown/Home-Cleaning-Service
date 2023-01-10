@@ -2,7 +2,6 @@ import React from "react";
 import { InfoSection, PricingSection, ServeSection, TeamSection } from "../layouts";
 import { HeroData } from "../data/InfoData";
 import { AboutusData } from "../data/InfoData";
-import { ServiceData } from "../data/ServiceData";
 import ContactSection from "../layouts/ContactSection/ContactSection";
 
 const HomePage = () => {
@@ -10,7 +9,7 @@ const HomePage = () => {
     <>
       <InfoSection {...HeroData} path="home" />
       <InfoSection {...AboutusData} path="about" />
-      <ServeSection {...ServiceData} />
+      <ServeSection/>
       <PricingSection/>
       <TeamSection/>
       <ContactSection/>
