@@ -3,8 +3,12 @@ import { Primary } from "../../globalStyles";
 
 export const TextWrapper = styled.article`
   display: ${({ boxContainer }) => (boxContainer ? "flex" : "none")};
-  width: ${({ longLabel }) => (longLabel ? "75%" : "140px")};
-  height: ${({ longLabel }) => (longLabel ? "90px" : "140px")};
+  min-width: 100px;
+  max-width: 140px;
+  min-height: 100px;
+  max-height: 140px;
+  width: 100%;
+  height: auto;
   background: ${Primary};
   position: absolute;
   top: ${({ longLabel }) => (longLabel ? "90%" : "35%")};
@@ -14,23 +18,26 @@ export const TextWrapper = styled.article`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-radius: ${({ longLabel }) => (longLabel ? "0 40px" : "0 30%")};
+  border-radius: ${({ longLabel }) => (longLabel ? "0 40px" : "0 40px")};
   @media screen and (max-width: 768px) {
     top: ${({ longLabel }) => (longLabel ? "90%" : "80%")};
-    left: ${({ longLabel }) => (longLabel ? "none" : "30%")};
-    border-radius: ${({ longLabel }) => (longLabel ? "0 40px" : "0 40px")};
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
 `;
+
 export const BoxHeader = styled.h1`
-  font-size: ${({ longLabel }) => (longLabel ? "1.40rem" : "2.25rem")};
+  font-size: ${({ longLabel }) =>
+    longLabel ? "1.40rem" : "clamp(1.25rem, 4vw, 2.25rem)"};
   line-height: ${({ longLabel }) => (longLabel ? "2rem" : "3rem")};
   text-transform: capitalize;
   font-weight: ${({ longLabel }) => (longLabel ? "600" : "800")}; ;
 `;
 
 export const BoxText = styled.p`
-  font-size: ${({ longLabel }) => (longLabel ? "1rem" : "0.85rem")};
-  word-spacing: ${({ longLabel }) => (longLabel ? "0" : "1rem")};
+  font-size: ${({ longLabel }) =>
+    longLabel ? "1rem" : "clamp(0.5rem, 4vw, 0.85rem)"};
   line-height: ${({ longLabel }) => (longLabel ? "2rem" : "1.25rem")};
   text-transform: ${({ longLabel }) =>
     longLabel ? "capitalize" : "uppercase"};

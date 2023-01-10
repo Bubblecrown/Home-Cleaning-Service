@@ -31,13 +31,9 @@ const CircleInfoLabel = `
   border-radius:50%;
   margin:auto;
   box-shadow: ${Boxshadow};
-  max-width: 450px;
-  max-height: 450px;
-  min-width: 100px;
-  min-height: 100px;
   padding: 0 10px;
-  width:100%;
-  height:auto;
+  width:clamp(100px, 100%, 400px);
+  height:clamp(100px, auto, 400px);
   `;
 
 export const HeroImg = styled.picture`
@@ -60,10 +56,8 @@ export const Img = styled.img`
     `
     padding: 20px;
     border-radius: 50%;
-    max-width: 450px;
-    max-height: 450px;
-    min-width: 100px;
-    min-height: 100px;
+    width:clamp(100px, 100%, 400px);
+    height:clamp(100px, auto, 400px);
     `}
 `;
 

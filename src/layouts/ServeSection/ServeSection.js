@@ -23,6 +23,7 @@ const ServeSection = () => {
                 <ImgTitle>{item.imageTitle}</ImgTitle>
               </ServiceColumn>
             ))}
+            
           </Row>
         </Container>
       </Section>
