@@ -69,6 +69,7 @@ export const Column = styled.aside`
   flex-basis: ${({ column }) => (column ? column : "48%")};
   padding: 0 10px;
   position: relative;
+  margin: auto;
   @media screen and (max-width: 768px) {
     max-width: 100%;
     flex-basis: 100%;

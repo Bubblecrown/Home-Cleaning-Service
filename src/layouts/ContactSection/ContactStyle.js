@@ -25,6 +25,7 @@ export const ContactColumn = styled(Column)`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin: 0;
   row-gap: 20px;
   max-width: 42%;
   flex-basis: 42%;
@@ -43,7 +44,6 @@ export const ContactRow = styled(Row)`
   display: flex;
   flex-wrap: nowrap;
 `;
-
 
 export const ContactIcon = styled.div`
   ${CircleLabel};
