@@ -9,6 +9,11 @@ export const FormControl = styled.form`
   height: 100%;
   max-height: 100%;
   flex-basis: 100%;
+  @media screen and (max-width: 960px) {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  align-items: flex-start;
 `;
 
 export const TextArea = styled.textarea`
@@ -23,6 +28,7 @@ export const TextArea = styled.textarea`
   border-color: ${LineColor};
   &:focus {
     outline: none;
+    border-color: #ffff;
   }
   font-size: clamp(0.75rem, 5vw, 1rem);
 `;
@@ -41,6 +47,8 @@ export const FormInput = styled.input`
   border-color: ${LineColor};
   &:focus {
     outline: none;
+  border-color: #ffff;
+    
   }
   font-size: clamp(0.75rem, 5vw, 1rem);
 `;
