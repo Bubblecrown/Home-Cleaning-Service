@@ -10,13 +10,13 @@ import {
   PlanList,
   ListIcon,
   ServiceList,
-  PlanButton,
 } from "./CardStyle";
 
 import { GoCheck } from "react-icons/go";
 import { GrFormClose } from "react-icons/gr";
+import { Button } from "../../globalStyles";
 
-const Card = ({ tier, price, serviceList }) => {
+const Card = ({ tier, price, serviceList, btnText, center }) => {
   return (
     <CardPlan>
         <CardTier>{tier}</CardTier>
@@ -33,7 +33,7 @@ const Card = ({ tier, price, serviceList }) => {
             <ServiceList>{list.textList}</ServiceList>
           </PlanList>
         ))}</PlanContainer>
-        <PlanButton>Get Started</PlanButton>
+        <Button btnText={btnText} center={center}>{btnText}</Button>
     </CardPlan>
   );
 };

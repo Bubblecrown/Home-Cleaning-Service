@@ -28,9 +28,11 @@ export const ContactColumn = styled(Column)`
   row-gap: 20px;
   max-width: 42%;
   flex-basis: 42%;
+  @media screen and (max-width: 960px) {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
 `;
-
-export const FormColumn = styled(Column)``;
 
 export const ContactRow = styled(Row)`
   &:not(:first-child) {
@@ -38,7 +40,10 @@ export const ContactRow = styled(Row)`
     margin-top: 40px;
     padding-top: 20px;
   }
+  display: flex;
+  flex-wrap: nowrap;
 `;
+
 
 export const ContactIcon = styled.div`
   ${CircleLabel};
@@ -48,4 +53,5 @@ export const ContactIcon = styled.div`
   justify-content: center;
   align-items: center;
   color: ${Primary};
+  margin: 0 0;
 `;

@@ -1,8 +1,8 @@
 import React from "react";
 import Label from "../../components/Label/Label";
 import TitleSection from "../../components/TitleComponent/TitleSection";
-import { Container, Row, Section, Column } from "../../globalStyles";
-import { HeroText, HeroImg, Img, HeroButton } from "./InfoStyle";
+import { Container, Row, Section, Column, Button } from "../../globalStyles";
+import { HeroText, HeroImg, Img } from "./InfoStyle";
 
 const InfoSection = ({
   reverse,
@@ -37,7 +37,7 @@ const InfoSection = ({
 
             <HeroText>{text}</HeroText>
             <HeroText>{additionText}</HeroText>
-            <HeroButton btnText={btnText}>{btnText}</HeroButton>
+            <Button btnText={btnText}>{btnText}</Button>
           </Column>
           <Column>
             <HeroImg

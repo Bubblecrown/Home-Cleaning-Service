@@ -16,6 +16,8 @@ const PricingSection = () => {
               tier={item.tier}
               price={item.price}
               serviceList={item.serviceList}
+              btnText={item.btnText}
+              center={item.center}
             />
           ))}
         </Row>

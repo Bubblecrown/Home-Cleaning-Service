@@ -1,15 +1,15 @@
 import React from "react";
 import { TitleSection } from "../../components";
+import InputBox from "../../components/InputBox/InputBox";
 import { AddressData, ContactData } from "../../data/ContactData";
-import { Column, Container, Row, Section } from "../../globalStyles";
+import { Container, Row, Section, Column } from "../../globalStyles";
 
 import {
   AddressTitle,
   AddressDetail,
   ContactColumn,
   ContactIcon,
-  FormColumn,
-  ContactRow
+  ContactRow,
 } from "./ContactStyle";
 const ContactSection = () => {
   return (
@@ -23,14 +23,15 @@ const ContactSection = () => {
                 <ContactIcon>
                   <item.icon />
                 </ContactIcon>
-                <Column column={"80%"}>
+                <Column>
                   <AddressTitle>{item.title}</AddressTitle>
                   <AddressDetail>{item.detail}</AddressDetail>
                 </Column>
               </ContactRow>
             ))}
           </ContactColumn>
-          <FormColumn></FormColumn>
+
+          <InputBox />
         </Row>
       </Container>
     </Section>

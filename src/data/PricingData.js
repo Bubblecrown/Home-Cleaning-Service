@@ -4,10 +4,13 @@ export const PriceData = {
   headTitle: false,
   center: true,
 };
+
 export const TierData = [
   {
     tier: "basic",
     price: "$299",
+    btnText: "Get Started",
+    center: true,
     serviceList: [
       { service: true, textList: "window cleaning" },
       { service: true, textList: "carpet cleaning" },
@@ -19,6 +22,8 @@ export const TierData = [
   {
     tier: "standard",
     price: "$499",
+    btnText: "Get Started",
+    center: true,
     serviceList: [
       { service: true, textList: "window cleaning" },
       { service: true, textList: "carpet cleaning" },
@@ -30,6 +35,8 @@ export const TierData = [
   {
     tier: "premium",
     price: "$899",
+    btnText: "Get Started",
+    center: true,
     serviceList: [
       { service: true, textList: "window cleaning" },
       { service: true, textList: "carpet cleaning" },

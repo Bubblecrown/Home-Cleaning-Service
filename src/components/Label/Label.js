@@ -4,11 +4,11 @@ const Label = ({ longLabel, boxContainer, boxName, boxText }) => {
   return (
     <TextWrapper boxContainer={boxContainer} longLabel={longLabel}>
       <BoxHeader longLabel={longLabel}>{boxName}</BoxHeader>
-      {boxText.map((text, index) => (
-        <BoxText longLabel={longLabel} key={index}>
-          {text}
+
+        <BoxText longLabel={longLabel}>
+          {boxText}
         </BoxText>
-      ))}
+      
     </TextWrapper>
   );
 };

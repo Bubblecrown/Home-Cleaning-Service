@@ -1,10 +1,10 @@
 import React from "react";
-import { TextWrapper, TabLine, TablineTitle } from "./TitleStyle";
+import { TextWrapper, TabLine, TablineTitle, SpanText } from "./TitleStyle";
 
 const TitleSection = ({title, headTitle, sectionTitle, center}) => {
   return (
     <TextWrapper center={center}>
-      <TabLine title={title} center={center}>{title}</TabLine>
+      <TabLine title={title} center={center}><SpanText>{title}</SpanText></TabLine>
       <TablineTitle headTitle={headTitle} title={title} >
         {sectionTitle}
       </TablineTitle>

@@ -39,6 +39,7 @@ export const BoxText = styled.p`
   font-size: ${({ longLabel }) =>
     longLabel ? "1rem" : "clamp(0.5rem, 4vw, 0.85rem)"};
   line-height: ${({ longLabel }) => (longLabel ? "2rem" : "1.25rem")};
+  width: min-content;
   text-transform: ${({ longLabel }) =>
     longLabel ? "capitalize" : "uppercase"};
 `;

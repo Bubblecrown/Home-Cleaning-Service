@@ -14,12 +14,12 @@ const TeamSection = () => {
           {TeamMember.map((item, index) => (
             <TeamColumn key={index}>
               <TeamImg src={item.imgPath} alt={item.imageAlt} />
-              {/* <Label
+              <Label
                 longLabel={TeamData.longLabel}
                 boxContainer={TeamData.boxContainer}
                 boxName={item.name}
                 boxText={item.position}
-              /> */}
+              />
             </TeamColumn>
           ))}
         </Row>

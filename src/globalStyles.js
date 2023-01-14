@@ -37,22 +37,34 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
+display: ${({ btnText }) => (btnText ? "block" : "none")};;
   border-radius: 20px;
-  padding: ${({ pd }) => (pd ? pd : "10px 20px")};
+  padding: ${({ center }) => (center ? "15px 40px" : "10px 20px")};
   white-space: nowrap;
   background-color: ${Primary};
   outline: none;
   border: none;
   color: #fff;
+  margin: ${({center}) => (center? 'auto' : '0 0')};
+  font-weight: ${({center}) => (center? '700' : 'none')};
   cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  &:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
 `;
 
 export const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
-  align-items: center;
   justify-content: space-between;
+  row-gap: 50px;
+  @media screen and (max-width: 768px) {
+    row-gap: 20px;
+  }
 `;
 
 export const Column = styled.aside`

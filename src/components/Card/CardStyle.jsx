@@ -2,7 +2,6 @@ import styled from "styled-components";
 import {
   BgCircleColor,
   Boxshadow,
-  Button,
   Column,
   Primary,
   Secondary,
@@ -74,11 +73,3 @@ export const ServiceList = styled.h3`
   font-weight: 500;
 `;
 
-export const PlanButton = styled(Button)`
-  font-size: 1rem;
-  display: block;
-  margin: auto;
-  padding: 15px 40px;
-  border-radius: 50px;
-  font-weight: 700;
-`;

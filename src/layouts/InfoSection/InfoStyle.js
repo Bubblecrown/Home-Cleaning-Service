@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import {
-  Button,
   Primary,
   Secondary,
   BgCircleColor,
@@ -61,15 +60,6 @@ export const Img = styled.img`
     `}
 `;
 
-export const HeroButton = styled(Button)`
-  ${Button};
-  display: ${({ btnText }) => (btnText ? "block" : "none")};
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  &:hover {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  }
-`;
 
 export const TextWrapper = styled.article`
   display: ${({ boxContainer }) => (boxContainer ? "flex" : "none")};

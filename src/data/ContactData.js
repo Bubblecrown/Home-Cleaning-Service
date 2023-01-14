@@ -25,3 +25,14 @@ export const AddressData = [
     detail: "info@gmail.com",
   },
 ];
+
+export const FormContact = {
+  btnText: "Send Message",
+  formData: [
+    { inputName: "Name", type: "text" },
+    { inputName: "Email", type: "email" },
+    { inputName: "Phone", type: "tel" },
+    
+  ]
+  ,TextMessage: "Message"
+};
