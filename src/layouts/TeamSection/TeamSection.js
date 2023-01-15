@@ -1,9 +1,8 @@
 import React from "react";
-import { TitleSection } from "../../components";
+import { TitleSection, Label } from "../../components";
 import { Container, Row, Section } from "../../globalStyles";
 import { TeamData,  TeamMember } from "../../data/TeamData";
 import { TeamColumn, TeamImg } from "./TeamStyle";
-import Label from "../../components/Label/Label";
 
 const TeamSection = () => {
   return (

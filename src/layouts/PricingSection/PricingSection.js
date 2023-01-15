@@ -1,8 +1,7 @@
 import React from "react";
 import { Container, Section, Row } from "../../globalStyles";
-import TitleSection from "../../components/TitleComponent/TitleSection";
+import {TitleSection, Card} from "../../components";
 import { PriceData, TierData } from "../../data/PricingData";
-import Card from "../../components/Card/Card";
 
 const PricingSection = () => {
   return (

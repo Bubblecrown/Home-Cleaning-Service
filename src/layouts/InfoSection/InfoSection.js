@@ -1,6 +1,5 @@
 import React from "react";
-import Label from "../../components/Label/Label";
-import TitleSection from "../../components/TitleComponent/TitleSection";
+import { TitleSection, Label } from "../../components";
 import { Container, Row, Section, Column, Button } from "../../globalStyles";
 import { HeroText, HeroImg, Img } from "./InfoStyle";
 

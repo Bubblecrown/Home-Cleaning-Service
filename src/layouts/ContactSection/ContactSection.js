@@ -1,6 +1,5 @@
 import React from "react";
-import { TitleSection } from "../../components";
-import InputBox from "../../components/InputBox/InputBox";
+import { TitleSection, InputBox } from "../../components";
 import { AddressData, ContactData } from "../../data/ContactData";
 import { Container, Row, Section, Column } from "../../globalStyles";
 
