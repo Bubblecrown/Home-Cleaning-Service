@@ -22,7 +22,7 @@ export const BgCircleColor = "#eff7fb";
 export const Boxshadow = "rgba(60,167,221,0.2) 0px 0px 15px 0px;";
 export const LineColor = "#c0dbe9";
 export const Section = styled.div`
-  padding: 80px 0;
+  padding: 60px 0;
 `;
 
 export const Container = styled.div`

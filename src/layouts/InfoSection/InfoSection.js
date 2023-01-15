@@ -44,7 +44,8 @@ const InfoSection = ({
               circle={circle}
               circleLabel={circleLabel}
             >
-              <Img src={imgPath} alt={imgTitle} circleLabel={circleLabel} />
+              <Img src={imgPath} alt={imgTitle} circle={circle}
+              circleLabel={circleLabel} />
 
               <Label
                 boxContainer={boxContainer}

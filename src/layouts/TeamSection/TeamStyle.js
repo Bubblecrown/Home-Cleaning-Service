@@ -7,6 +7,16 @@ export const TeamColumn = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
+
+  @media screen and (max-width: 960px) {
+    max-width: 42%;
+    flex-basis: 42%;
+    margin: 40px 0;
+  }
+  @media screen and (max-width: 576px) {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
 `;
 export const TeamImg = styled.img`
   ${CircleLabel};

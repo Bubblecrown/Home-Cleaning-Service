@@ -7,23 +7,29 @@ import {
 } from "../../globalStyles";
 
 export const HeroText = styled.p`
-  font-size: 1rem;
+  font-size: clamp(0.7rem, 5vw, 1rem);
   line-height: 1.3rem;
   margin: 30px 0;
   color: ${Secondary};
 `;
 
-const Circle = `&:before {
+const Circle = `
+&:before {
   content: "";
   position: absolute;
-  width: 350px;
-  height: 350px;
+  width:clamp(250px, 100%, 350px);
+  height: clamp(250px, 100%, 350px);
   border-radius: 200px;
   background-color: ${Primary};
   left: 50%;
   top: 50%;
   translate: -50% -50%;
-  z-index: -1;}`;
+  z-index: -1;
+  @media screen and (max-width: 480px) {
+    width:250px;
+    height: 250px;
+  }
+}`;
 
 const CircleInfoLabel = `
   background-color: ${BgCircleColor};
@@ -58,8 +64,12 @@ export const Img = styled.img`
     width:clamp(100px, 100%, 400px);
     height:clamp(100px, auto, 400px);
     `}
+  ${({ circle }) =>
+    circle &&
+    `
+    width: clamp(200px, 100%, 270px);
+    `}
 `;
-
 
 export const TextWrapper = styled.article`
   display: ${({ boxContainer }) => (boxContainer ? "flex" : "none")};

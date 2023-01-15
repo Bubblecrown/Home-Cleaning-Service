@@ -4,7 +4,7 @@ import { Container, Primary } from "../../globalStyles";
 export const FooterSection = styled.footer`
   width: 100%;
   height: 100%;
-  padding: 20px 0;
+  padding: 40px 0;
   background-color: ${Primary};
 `;
 

@@ -21,7 +21,8 @@ export const ServiceColumn = styled.section`
 
 export const ServiceImg = styled.img`
   ${CircleLabel}
-  width: 160px;
+  max-width: 160px;
+  width: 100%;
   padding: 10px;
   margin-bottom: 30px;
   
