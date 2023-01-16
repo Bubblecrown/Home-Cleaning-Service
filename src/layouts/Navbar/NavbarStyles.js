@@ -79,6 +79,7 @@ export const NavItem = styled.li`
   height: 40px;
   position: relative;
   margin: 0 10px;
+  cursor: pointer;
   &:after {
     content: "";
     position: absolute;

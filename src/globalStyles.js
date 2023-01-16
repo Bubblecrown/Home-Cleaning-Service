@@ -60,7 +60,7 @@ export const Row = styled.div`
   flex-wrap: wrap;
   align-items: flex-start;
   flex-direction: ${({ reverse }) => (reverse ? "row-reverse" : "row")};
-  justify-content: space-between;
+  justify-content: space-evenly;
   row-gap: 50px;
 `;
 

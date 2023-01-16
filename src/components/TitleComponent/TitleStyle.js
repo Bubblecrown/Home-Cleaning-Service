@@ -7,6 +7,10 @@ export const TextWrapper = styled.section`
   align-items: ${({ center }) => (center ? "center" : "flex-start")};
   flex-direction: column;
   margin-bottom: ${({ center }) => (center ? "40px" : "0")};
+  @media screen and (max-width: 768px) {
+    align-items: center;
+
+  }
 `;
 
 const Line = `
