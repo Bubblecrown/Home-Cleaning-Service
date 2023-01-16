@@ -28,4 +28,6 @@ export const FooterRow = styled.div`
   justify-content: center;
 `;
 
-export const IconFooter = styled.img``;
+export const IconFooter = styled.img`
+width: clamp(32px, 5vw, 48px);
+`;

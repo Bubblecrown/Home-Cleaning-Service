@@ -21,6 +21,7 @@ export const BgColor = "#e7f3f9";
 export const BgCircleColor = "#eff7fb";
 export const Boxshadow = "rgba(60,167,221,0.2) 0px 0px 15px 0px;";
 export const LineColor = "#c0dbe9";
+
 export const Section = styled.div`
   padding: 60px 0;
 `;
@@ -52,6 +53,10 @@ export const Button = styled.button`
   transition: all 0.3s ease;
   &:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  @media screen and (max-width: 768px) {
+    margin: 0 auto;
+
   }
 `;
 

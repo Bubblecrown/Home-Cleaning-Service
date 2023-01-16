@@ -1,7 +1,7 @@
 import React from "react";
 import { TitleSection, InputBox } from "../../components";
 import { AddressData, ContactData } from "../../data/ContactData";
-import { Container, Row, Section, Column } from "../../globalStyles";
+import { Container, Row, Column } from "../../globalStyles";
 
 import {
   AddressTitle,
@@ -9,11 +9,12 @@ import {
   ContactColumn,
   ContactIcon,
   ContactRow,
+  ContactSec
 
 } from "./ContactStyle";
 const ContactSection = ({path}) => {
   return (
-    <Section id={path}>
+    <ContactSec id={path}>
       <Container>
         <TitleSection {...ContactData} />
         <Row>
@@ -34,7 +35,7 @@ const ContactSection = ({path}) => {
           <InputBox />
         </Row>
       </Container>
-    </Section>
+    </ContactSec>
   );
 };
 

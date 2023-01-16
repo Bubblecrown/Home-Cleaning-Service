@@ -8,6 +8,10 @@ import {
   Secondary,
 } from "../../globalStyles";
 
+export const ContactSec = styled.section`
+  padding: 90px 0 60px 0;
+`;
+
 export const AddressTitle = styled.h1`
   text-transform: capitalize;
   font-size: 1.4rem;
