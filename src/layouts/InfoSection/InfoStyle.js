@@ -4,8 +4,14 @@ import {
   Secondary,
   BgCircleColor,
   Boxshadow,
+  Section,
 } from "../../globalStyles";
 
+export const InfoSec = styled(Section)`
+  padding: ${({ circle }) =>
+    circle ? "140px 0 60px 0" : "60px 0"};
+
+`;
 export const HeroText = styled.p`
   font-size: clamp(0.7rem, 5vw, 1rem);
   line-height: 1.3rem;

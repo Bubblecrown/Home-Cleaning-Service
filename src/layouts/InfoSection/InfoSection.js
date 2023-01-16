@@ -1,7 +1,7 @@
 import React from "react";
 import { TitleSection, Label } from "../../components";
-import { Container, Row, Section, Column, Button } from "../../globalStyles";
-import { HeroText, HeroImg, Img } from "./InfoStyle";
+import { Container, Row, Column, Button } from "../../globalStyles";
+import { HeroText, HeroImg, Img, InfoSec } from "./InfoStyle";
 
 const InfoSection = ({
   reverse,
@@ -20,10 +20,10 @@ const InfoSection = ({
   boxText,
   boxContainer,
   path,
-  center,
+  center
 }) => {
   return (
-    <Section id={path}>
+    <InfoSec id={path} circle={circle}>
       <Container>
         <Row reverse={reverse}>
           <Column>
@@ -44,8 +44,12 @@ const InfoSection = ({
               circle={circle}
               circleLabel={circleLabel}
             >
-              <Img src={imgPath} alt={imgTitle} circle={circle}
-              circleLabel={circleLabel} />
+              <Img
+                src={imgPath}
+                alt={imgTitle}
+                circle={circle}
+                circleLabel={circleLabel}
+              />
 
               <Label
                 boxContainer={boxContainer}
@@ -56,7 +60,7 @@ const InfoSection = ({
           </Column>
         </Row>
       </Container>
-    </Section>
+    </InfoSec>
   );
 };
 

@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { Container, Primary, Secondary } from "../../globalStyles";
+import { BgColor, Container, Primary, Secondary } from "../../globalStyles";
 import { Link } from "react-scroll";
 
 export const Nav = styled.nav`
-  background-color: transparent;
+  background-color: ${BgColor};
   height: 80px;
   display: flex;
   justify-content: center;
@@ -11,7 +11,8 @@ export const Nav = styled.nav`
   font-size: 1.2rem;
   top: 0;
   z-index: 99;
-  
+  width: 100%;
+  position: fixed;
 `;
 
 export const NavbarContainer = styled(Container)`
