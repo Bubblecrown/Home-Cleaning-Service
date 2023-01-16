@@ -31,7 +31,7 @@ const Navbar = () => {
       document.body.style.overflow = "auto";
     } else {
       setClick(true);
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = "auto";
     }
   };
 

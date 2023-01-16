@@ -3,9 +3,9 @@ import { Container, Section, Row } from "../../globalStyles";
 import {TitleSection, Card} from "../../components";
 import { PriceData, TierData } from "../../data/PricingData";
 
-const PricingSection = () => {
+const PricingSection = ({path}) => {
   return (
-    <Section>
+    <Section id={path}>
       <Container>
         <TitleSection {...PriceData} />
         <Row>

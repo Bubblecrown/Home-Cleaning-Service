@@ -9,14 +9,27 @@ import {
 
 export const CardPlan = styled.section`
   ${Column}
-  max-width: 32%;
-  flex-basis: 32%;
+  max-width: 30%;
+  flex-basis: 30%;
   height: auto;
   background-color: ${BgCircleColor};
   padding: 40px 30px;
   border-radius: 10px;
   box-shadow: ${Boxshadow};
   text-transform: capitalize;
+  @media screen and (max-width: 980px) {
+    max-width: 42%;
+    flex-basis: 42%;
+  }
+  @media screen and (max-width: 710px) {
+    max-width: 60%;
+    flex-basis: 60%;
+  }
+
+  @media screen and (max-width: 536px) {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
 `;
 
 export const CardTier = styled.h1`
@@ -63,7 +76,7 @@ export const PlanList = styled.div`
   font-size: 1rem;
   color: ${Secondary};
   display: flex;
-  gap: 20px;
+  gap: clamp(5px, 5vw, 20px);
   margin-bottom: 5px;
 `;
 export const ListIcon = styled.h2`
@@ -71,5 +84,6 @@ export const ListIcon = styled.h2`
 `;
 export const ServiceList = styled.h3`
   font-weight: 500;
+  font-size: clamp(0.8rem, 5vw, 1.17rem) ;
+  width: 100%;
 `;
-

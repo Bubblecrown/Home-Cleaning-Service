@@ -15,10 +15,10 @@ const HomePage = () => {
     <>
       <InfoSection {...HeroData} path="home" />
       <InfoSection {...AboutusData} path="about" />
-      <ServeSection />
-      <PricingSection />
-      <TeamSection />
-      <ContactSection />
+      <ServeSection path="services" />
+      <PricingSection path="pricing" />
+      <TeamSection path="team" />
+      <ContactSection path="contact" />
       <Footer />
     </>
   );

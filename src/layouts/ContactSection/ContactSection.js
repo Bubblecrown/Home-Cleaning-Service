@@ -9,10 +9,11 @@ import {
   ContactColumn,
   ContactIcon,
   ContactRow,
+
 } from "./ContactStyle";
-const ContactSection = () => {
+const ContactSection = ({path}) => {
   return (
-    <Section>
+    <Section id={path}>
       <Container>
         <TitleSection {...ContactData} />
         <Row>

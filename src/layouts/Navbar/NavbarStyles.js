@@ -11,6 +11,7 @@ export const Nav = styled.nav`
   font-size: 1.2rem;
   top: 0;
   z-index: 99;
+  
 `;
 
 export const NavbarContainer = styled(Container)`
@@ -19,6 +20,7 @@ export const NavbarContainer = styled(Container)`
   justify-content: space-between;
   align-items: center;
   ${Container}
+  
 `;
 
 export const NavLogo = styled(Link)`

@@ -8,19 +8,19 @@ export const NavData = [
     title: "About",
   },
   {
-    to: "/services",
+    to: "services",
     title: "Services",
   },
   {
-    to: "/pricing",
+    to: "pricing",
     title: "Pricing",
   },
   {
-    to: "/team",
+    to: "team",
     title: "Team",
   },
   {
-    to: "/contact",
+    to: "contact",
     title: "Contact",
   },
 ];

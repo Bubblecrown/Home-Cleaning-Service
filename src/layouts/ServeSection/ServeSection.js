@@ -9,11 +9,11 @@ import {
   ImgTitle,
 } from "./ServeStyle";
 
-const ServeSection = () => {
+const ServeSection = ({path}) => {
   const { title, sectionTitle, headTitle, center } = ServiceData;
   return (
-    <>
-      <Section>
+
+      <Section id={path}>
         <Container>
           <TitleSection title={title} headTitle={headTitle} sectionTitle={sectionTitle} center={center}/>
           <Row>
@@ -27,7 +27,7 @@ const ServeSection = () => {
           </Row>
         </Container>
       </Section>
-    </>
+
   );
 };
 

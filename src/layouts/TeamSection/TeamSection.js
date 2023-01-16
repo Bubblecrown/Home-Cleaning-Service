@@ -4,9 +4,9 @@ import { Container, Row, Section } from "../../globalStyles";
 import { TeamData,  TeamMember } from "../../data/TeamData";
 import { TeamColumn, TeamImg } from "./TeamStyle";
 
-const TeamSection = () => {
+const TeamSection = ({path}) => {
   return (
-    <Section>
+    <Section id={path}>
       <Container>
         <TitleSection {...TeamData} />
         <Row>
